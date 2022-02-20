@@ -12,4 +12,22 @@ module.exports = [
     pathName: '/users/:id',
     handler: UsersController.getUserById,
   },
+
+  {
+    method: 'POST',
+    pathName: '/users',
+    handler: UsersController.createUser,
+  },
+
+  {
+    method: 'PUT',
+    pathName: '/users/:id',
+    handler: UsersController.updateUser,
+  },
+
+  {
+    method: 'DELETE',
+    pathName: '/users/:id',
+    handler: UsersController.deleteUser,
+  },
 ];
